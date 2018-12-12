@@ -19,14 +19,13 @@ import org.thymeleaf.templatemode.TemplateMode;
 @Configuration
 @EnableWebMvc
 @ComponentScan("ua.pp.darknsoft")
-public class MvcWebConfig implements WebMvcConfigurer {
+public class ServletConfig implements WebMvcConfigurer {
+
     private ApplicationContext applicationContext;
 
-
-    public MvcWebConfig() {
+    public ServletConfig() {
         super();
     }
-
 
     public void setApplicationContext(final ApplicationContext applicationContext)
             throws BeansException {

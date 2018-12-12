@@ -12,6 +12,9 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <version.spring.framework>5.1.3.RELEASE</version.spring.framework>
+        <version.spring.security>5.1.2.RELEASE</version.spring.security>
+        <version.org.thymeleaf>3.0.11.RELEASE</version.org.thymeleaf>
     </properties>
 
     <dependencies>
@@ -26,6 +29,24 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>5.1.3.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${version.spring.security}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${version.spring.security}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${version.spring.security}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
         <dependency>
@@ -45,6 +66,12 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.4</version>
         </dependency>
     </dependencies>
 </project>
